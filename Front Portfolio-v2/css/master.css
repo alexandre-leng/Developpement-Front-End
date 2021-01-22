@@ -1,0 +1,189 @@
+
+@import 'fonts.css';
+
+:root {
+    --primary-color: #34332E;
+    --secondary-color: #E8505B;
+    --light-color: #fff;
+    --dark-color: #222;
+    font-size: 100%;
+}
+
+/*RESET*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    /* border: 1px dashed white; */
+    /* background: rgba(0,0,0,0.2); */
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    font-size: 18px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+aside {
+    flex: 1 1 300px;
+    background-image: url('../images/aside-bg.jpg');
+    background-position: center;
+    background-size: cover;/*étiré*/
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+
+main {
+    flex: 2 2 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    display: inline-block;
+}
+
+/*FRAMEWORK*/
+
+/*PARENT*/
+
+.d--flex {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row*/
+    /* align-items: stretch; */
+    /*align-content: stretch*/
+}
+
+.row--reverse {
+    flex-direction: row-reverse;
+}
+
+.ai--c {
+    align-items: center;
+}
+
+/*Enfants - flex: 0 1 auto*/
+
+.flex--150 {
+    flex: 1 1 150px;
+}
+
+.flex--250 {
+    flex: 1 1 250px;
+}
+
+
+/*ESPACEMENT*/
+
+.m--1 {
+    margin: 1rem;/*1rem = 16px*/
+}
+.mb--1 {
+    margin: 0 0 1rem;
+}
+.p--1 {
+    padding: 1rem;
+}
+
+/**/
+.text--center {
+    align-items: center;
+}
+
+.text--dark {
+    color: var(--dark-color);
+}
+
+.text--light {
+    color: var(--light-color);
+}
+
+a.text--dark:hover {
+    color: var(--secondary-color);
+}
+
+a.text--light:hover {
+    color: var(--secondary-color);
+}
+
+/**/
+
+.bg--primary {
+    background-color: var(--primary-color);
+}
+.bg--light {
+    background-color: var(--light-color);
+}
+
+/* h1::before, h1::after {
+    content: '>';
+} */
+
+/**/
+.card {
+    max-width: 600px;
+    margin: 2rem auto;
+    /* position: static; */
+    position: sticky;
+    top: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    
+}
+
+.card__photo {
+    width: 100%;
+    height: 400px;
+    border: 2px solid green;
+    position: relative;
+}
+
+.card__red-sqare {
+
+    background-color: var(--secondary-color);
+    position: absolute;
+     width: 100%;
+     height: 100%;
+     margin: -32px auto auto -32px;
+     opacity: 0.2;
+}
+
+.card__img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 600px){
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
