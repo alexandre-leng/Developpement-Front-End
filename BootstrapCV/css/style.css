@@ -12,12 +12,21 @@ img{
     max-width: 100%;
     height: auto;
 }
-
+section
+{
+    padding:45px 0 80px 0;
+}
 section .heading{
     text-align: center;
     padding-bottom: 40px;
 }
 
+.red-divider{
+    width: 100px;
+    height: 2px;
+    background: #d82c2e;
+    margin:0 auto;
+}
 
 /* ABOUT */
 
@@ -53,8 +62,41 @@ section .heading{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    transition: 0.3s;
+    all-webkit-transition:;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
 }
 
 .button1:hover{
     background: white;
+    color: #d82c2e;
+    text-decoration: none;
+}
+
+/* SKILLS */
+#skills
+{
+    background: #fff;
+}
+
+#skills .heading h2{
+    color:red;
+    text-transform: uppercase;
+}
+
+#skills .progress{
+    height: 100%;
+    margin:30px 20px;
+    background: #ddd;
+}
+
+#skills .progress-bar{
+    background: #d82c2e;
+}
+
+#skills .progress h5{
+    text-shadow: 1px 1px 1px black;
 }
