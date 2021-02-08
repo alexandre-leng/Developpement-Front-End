@@ -1,75 +1,84 @@
 /* GENERAL */
 
-body{
+body {
     font-family: 'Lato, sans-serif';
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-ul,ol{
+ul,
+ol {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
-section
-{
-    padding:45px 0 80px 0;
+
+section {
+    padding: 45px 0 80px 0;
 }
-section .heading{
+
+section .heading {
     text-align: center;
     padding-bottom: 40px;
 }
-section .heading h2{
-text-transform: uppercase;
+
+section .heading h2 {
+    text-transform: uppercase;
 }
 
-.red-divider{
+.red-divider {
     width: 100px;
     height: 2px;
     background: #d82c2e;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.white-divider{
+
+.white-divider {
     width: 100px;
     height: 2px;
-    background:white;
-    margin:0 auto;
+    background: white;
+    margin: 0 auto;
 }
 
 /* ABOUT */
 
-#about{
+#about {
     padding-top: 100px;
     background: #d82c2e;
 }
 
-.profile-picture{
+.profile-picture {
     text-align: center;
-    margin:0 auto;
-    float:none;
+    margin: 0 auto;
+    float: none;
 }
 
-#about .heading h1{
-    color:#fff;
+#about .heading h1 {
+    color: #fff;
 }
 
-#about .heading h3{
-    color:black;
+#about .heading h3 {
+    color: black;
 }
 
-.button1{
+.button1 {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     border: 1px solid white;
     margin-top: 20px;
     display: inline-block;
-    padding:18px 50px;
+    padding: 18px 50px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -78,86 +87,86 @@ text-transform: uppercase;
     transition: 0.3s;
 }
 
-.button1:hover{
+.button1:hover {
     background: white;
     color: #d82c2e;
     text-decoration: none;
 }
 
 /* SKILLS */
-#skills
-{
+#skills {
     background: #fff;
 }
 
-#skills .heading h2{
-    color:red;
+#skills .heading h2 {
+    color: red;
     text-transform: uppercase;
 }
 
-#skills .progress{
+#skills .progress {
     height: 100%;
-    margin:30px 20px;
+    margin: 30px 20px;
     background: #ddd;
 }
 
-#skills .progress-bar{
+#skills .progress-bar {
     background: #d82c2e;
 }
 
-#skills .progress h5{
+#skills .progress h5 {
     text-shadow: 1px 1px 1px black;
 }
 
 /* EXPERIENCES */
 
-#experience{
+#experience {
     background: #d82c2e;
 }
 
-#experience .heading h2{
-    color:#fff;
+#experience .heading h2 {
+    color: #fff;
 }
 
-.timeline{
+.timeline {
     padding: 30px 10px;
     position: relative;
 }
 
-.timeline:before{
-    top:0;
-    bottom:0;
-    position:absolute;
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
     content: " ";
     width: 5px;
     background-color: #333;
-    left:50%;
+    left: 50%;
     margin-left: -2.5px;
 }
 
-.timeline > li{
+.timeline>li {
     margin-bottom: 20px;
-    position:relative;
+    position: relative;
 }
 
-.timeline > li:after {
+.timeline>li:after {
     clear: both;
 }
 
-.timeline > li:before, .timeline > li:after{
+.timeline>li:before,
+.timeline>li:after {
     content: " ";
     display: table;
 }
 
-.timeline li .timeline-badge{
-    color:#d82c2e;
+.timeline li .timeline-badge {
+    color: #d82c2e;
     width: 50px;
     line-height: 50px;
     font-size: 20px;
     text-align: center;
-    position:absolute;
-    top:16px;
-    left:50%;
+    position: absolute;
+    top: 16px;
+    left: 50%;
     margin-left: -25px;
     background-color: #ddd;
     border-radius: 50%;
@@ -168,19 +177,19 @@ text-transform: uppercase;
 }
 
 
-.timeline-panel-container{
+.timeline-panel-container {
     width: 50%;
     float: left;
 }
 
-.timeline-panel-container-inverted{
+.timeline-panel-container-inverted {
     width: 50%;
     float: right;
 }
 
-.timeline-panel{
+.timeline-panel {
     width: 90%;
-    float:right;
+    float: right;
     margin-right: 40px;
     border: 1px solid #d4d4d4;
     border-radius: 7px;
@@ -189,41 +198,117 @@ text-transform: uppercase;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
     padding: 20px 25px;
-    position:relative;
+    position: relative;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     background: white;
 }
 
 
-.timeline-panel-container-inverted .timeline-panel{
-    float:left;
-    margin-left:40px;
+.timeline-panel-container-inverted .timeline-panel {
+    float: left;
+    margin-left: 40px;
 }
 
-.timeline-panel:after{
-    position:absolute;
-    top:27px;
+.timeline-panel:after {
+    position: absolute;
+    top: 27px;
     right: -14px;
-    display:inline-block;
-    border-top:14px solid transparent;
-    border-left:14px solid white;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid white;
     border-right: 0 solid #fff;
     border-bottom: 14px solid transparent;
     content: " ";
 }
 
-.timeline-panel-container-inverted .timeline-panel:after{
+.timeline-panel-container-inverted .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
-    left:-14px;
+    left: -14px;
     right: auto;
 }
 
-.timeline-heading h3{
-    margin-top:5px;
+.timeline-heading h3 {
+    margin-top: 5px;
     font-size: 20px;
 }
 
-.timeline-heading h4{
-    color:#d82c2e;
+.timeline-heading h4 {
+    color: #d82c2e;
+}
+
+/* EDUCATION */
+
+#education {
+    background: #fff;
+}
+
+#education .heading h2 {
+    color: #d82c2e
+}
+
+.education-block {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #ddd;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.education-block h5 {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block .glyphicon {
+    font-size: 40px !important;
+}
+
+.education-block h3 {
+    color: #d82c2e;
+}
+
+.education-block h4 {
+    margin-bottom: 20px;
+}
+
+.education-block p {
+   font-weight: bold;
+}
+
+.education-block .red-divider{
+    margin-bottom:20px;
+}
+
+/* PORTFOLIO */
+
+#portfolio
+{
+    background: #d82c2e;
+}
+
+#portfolio .heading h2{
+    color:white;
+}
+
+#portfolio .thumbnail img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+#portfolio .thumbnail img:hover{
+    width: 100%;
+    height: 100%;
+    filter: none;
+    -webkit-filter: none;
 }
