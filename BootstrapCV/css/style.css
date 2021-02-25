@@ -1,9 +1,7 @@
-ALEX
-
 /* GENERAL */
 
 body {
-    font-family: 'Lato', sans-serif';
+    font-family: 'Lato, sans-serif';
 }
 
 h1,
@@ -122,7 +120,7 @@ font-weight:bold;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    transition: all 0.3s ease-in 0s;
+    transition: 0.3s;
 }
 
 .button1:hover {
@@ -137,7 +135,7 @@ font-weight:bold;
 }
 
 #skills .heading h2 {
-    color: #d82c2e;
+    color: red;
     text-transform: uppercase;
 }
 
@@ -290,7 +288,7 @@ font-weight:bold;
     margin: 0 auto;
     text-align: center;
     padding: 30px;
-    background: #ddd;
+    background-color: #ddd;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -307,7 +305,7 @@ font-weight:bold;
 }
 
 .education-block .glyphicon {
-    font-size: 40px;
+    font-size: 40px !important;
 }
 
 .education-block h3 {
@@ -399,7 +397,7 @@ footer .glyphicon{
     height:30px;
 }
 footer .glyphicon:hover{
-    font-size:27px;
+    font-size:28px;
 }
 
 footer h5{
